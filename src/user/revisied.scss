@@ -1,0 +1,95 @@
+#app {
+    #main {
+        .section {
+            display: flex;
+            .revisiTable {
+                margin-right: 2.2rem;
+                width: 70%;
+                .card-header {
+                    h4 {
+                        margin-bottom: 1rem;
+                    }
+                    .addRevisied {
+                        font-size: 14px;
+                        .btn {
+                            font-size: 14px;
+                            margin-left: .3rem;
+                        }
+                    }
+                }
+                .card-body {
+                    .table-responsive {
+                        .table {
+                            tbody {
+                                tr {
+                                    .btnAction {
+                                        button {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .detailServiceOrdered {
+                width: 30%;
+                .card-body {
+                    .cards {
+                        .imgService {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 2rem;
+                            img {
+                                width: 100%;
+                                max-width: 124px;
+                                border-radius: 12px;
+                            }
+                        }
+                        .detailServiceInformation {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .detailService {
+                                .nameService {
+                                    margin: 0;
+                                    font-size: 16px;
+                                }
+                                .kategori {
+                                    margin: 0;
+                                    font-size: 12px;
+                                }
+                            }
+                            .prices {
+                                font-size: 12px;
+                                padding-left: 1rem;
+                                border-left: 1px solid #E5E7E9;
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 992px) {
+    #app {
+        #main {
+            .section {
+                flex-direction: column-reverse;
+                .revisiTable {
+                    width: 100%;
+                }
+                .detailServiceOrdered {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+#app #main .page-heading .section {
+  display: flex;
+}
+
+#app #main .page-heading .section .card .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app #main .page-heading .section .card .card-header .icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#app #main .page-heading .section .card .card-header .icon i {
+  background: #435ebe;
+  border-radius: 50%;
+  padding: 2.2rem;
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app #main .page-heading .section .card .card-header .transactionID {
+  margin-bottom: 1.2rem;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .status {
+  font-size: .9rem;
+  font-weight: 700;
+  margin-right: .5rem;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .status p {
+  margin-bottom: 0;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .status .label {
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 700;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .status .succses {
+  background: #d6ffde;
+  color: #03ac0e;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .status .notPaid {
+  background-color: #ffeaef;
+  color: #ef144a;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .date {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .date p {
+  margin-bottom: 0;
+}
+
+#app #main .page-heading .section .card .card-header .informationTransaction .date span {
+  font-weight: 500;
+}
+
+#app #main .page-heading .section .card .card-body .lines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+#app #main .page-heading .section .card .card-body .lines .detailService {
+  display: flex;
+  align-items: flex-start;
+}
+
+#app #main .page-heading .section .card .card-body .lines .detailService .imagesService {
+  margin-right: .7rem;
+}
+
+#app #main .page-heading .section .card .card-body .lines .detailService .imagesService img {
+  width: 100%;
+  max-width: 94px;
+  max-height: 94px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+#app #main .page-heading .section .card .card-body .lines .detailService .infoService .nameService {
+  margin-bottom: 0rem;
+}
+
+#app #main .page-heading .section .card .card-body .lines .detailService .infoService .descService {
+  margin: 0;
+}
+
+#app #main .page-heading .section .card .card-body .lines .totalPrice {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#app #main .page-heading .section .card .card-body .note {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#app #main .page-heading .section .card .card-body .note p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+#app #main .page-heading .section .card .card-body .deadlineRequest {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#app #main .page-heading .section .card .card-body .deadlineRequest input {
+  width: min-content;
+}
+
+#app #main .page-heading .section .card .card-body .mb-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#app #main .page-heading .section .card .card-body .mb-2 .label {
+  font-weight: 700;
+}
+
+#app #main .page-heading .section .card .card-body .borderBottom {
+  border-bottom: 1px solid #cdced0;
+}
+
+#app #main .page-heading .section .orderDetail {
+  width: 70%;
+  margin-right: 2.2rem;
+}
+
+#app #main .page-heading .section .profileDetail {
+  width: 30%;
+  height: max-content;
+}
+
+#app #main .page-heading .section .profileDetail .card-body {
+  padding-top: 1rem;
+  border-top: 1px solid #cdced0;
+}
+
+#app #main .page-heading .section .pembayaran {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .informationTransaction {
+    flex-direction: column;
+  }
+  .informationTransaction .status {
+    width: 100%;
+    font-size: .8rem !important;
+  }
+  .informationTransaction .status p {
+    margin-bottom: .3rem;
+  }
+  .informationTransaction .date {
+    width: 100%;
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #app #main .section {
+    flex-direction: column-reverse;
+  }
+  #app #main .section .card {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #app #main .section .orderDetail .card-body .lines {
+    align-items: flex-end !important;
+  }
+  #app #main .section .orderDetail .card-body .lines .detailService {
+    flex-direction: column;
+  }
+  #app #main .section .orderDetail .card-body .lines .detailService .imagesService {
+    margin-bottom: 1rem;
+  }
+  #app #main .section .orderDetail .card-body .lines .detailService .infoService .nameService {
+    font-size: 18px;
+  }
+  #app #main .section .orderDetail .card-body .lines .detailService .infoService .descService {
+    font-size: 12px;
+  }
+  #app #main .section .orderDetail .card-body .lines .totalPrice {
+    font-size: 14px;
+  }
+  #app #main .section .orderDetail .card-body .note {
+    align-items: flex-start !important;
+  }
+  #app #main .section .orderDetail .card-body .deadlineRequest {
+    align-items: flex-start !important;
+  }
+}

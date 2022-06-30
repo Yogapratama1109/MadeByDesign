@@ -1,0 +1,123 @@
+#app #main .page-heading .section {
+  display: flex;
+}
+
+#app #main .page-heading .section .detailService {
+  width: 70%;
+  margin-right: 2.2rem;
+}
+
+#app #main .page-heading .section .detailService .card-body {
+  display: flex;
+}
+
+#app #main .page-heading .section .detailService .card-body .imagesService {
+  margin-right: 1rem;
+  width: 40%;
+}
+
+#app #main .page-heading .section .detailService .card-body .imagesService img {
+  border-radius: .7rem;
+  width: 100%;
+  max-width: 364px;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService {
+  width: 60%;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .nameService {
+  margin-bottom: 0;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .deskripsiService {
+  margin-bottom: 1rem;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices p {
+  margin-bottom: 2.2rem;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel {
+  padding-top: 1rem;
+  border-top: 2px solid #dce7f1;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordionTitle {
+  margin-bottom: .3rem;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordionParagraf {
+  margin-bottom: 1.4rem;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordion .accordion-item .accordion-header .accordion-button {
+  width: 100%;
+  text-align: start;
+  border: none;
+  padding: .5rem .8rem;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordion .accordion-item .accordion-header .accordion-button svg {
+  transform: rotate(180deg);
+  transition: transform .5s;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordion .accordion-item .accordion-header .accordion-button.collapsed svg {
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+
+#app #main .page-heading .section .detailService .card-body .informationService .detailServices .detailLevel .accordion .accordion-item .accordion-collapse .accordion-body {
+  background: #f8f9fa;
+  padding: .5rem .8rem;
+}
+
+#app #main .page-heading .section .formDetailService {
+  width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+  #app #main .page-heading .section {
+    display: flex;
+    flex-direction: column;
+  }
+  #app #main .page-heading .section .detailService {
+    width: 100%;
+    margin-right: 0;
+  }
+  #app #main .page-heading .section .detailService .card-body .informationService {
+    width: 100%;
+  }
+  #app #main .page-heading .section .formDetailService {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app #main .page-heading .section {
+    display: flex;
+    flex-direction: column;
+  }
+  #app #main .page-heading .section .detailService {
+    width: 100%;
+    margin-right: 0;
+  }
+  #app #main .page-heading .section .detailService .card-body {
+    flex-direction: column;
+  }
+  #app #main .page-heading .section .detailService .card-body .imagesService {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #app #main .page-heading .section .detailService .card-body .imagesService img {
+    max-width: none !important;
+    width: 100%;
+  }
+}

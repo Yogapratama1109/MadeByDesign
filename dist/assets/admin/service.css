@@ -1,0 +1,5 @@
+#app #main .table tbody tr td .imageService {
+  width: 100%;
+  max-width: 94px;
+  border-radius: 12px;
+}

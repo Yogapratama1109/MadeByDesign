@@ -1,0 +1,142 @@
+#app {
+    #main {
+        .page-heading {
+            .section {
+                display: flex;
+                .detailService {
+                    width: 70%;
+                    margin-right: 2.2rem;
+
+                    .card-body {
+                        display: flex;
+                        .imagesService {
+                            margin-right: 1rem;
+                            width: 40%;
+                            img {
+                                border-radius: .7rem;
+                                width: 100%;
+                                max-width: 364px;
+                            }
+                        }
+                        .informationService {
+                            width: 60%;
+                            .nameService {
+                                margin-bottom: 0;
+                            }
+                            .deskripsiService {
+                                margin-bottom: 1rem;
+                            }
+                            .detailServices {
+                                p {
+                                    margin-bottom: 2.2rem;
+                                }
+                                .detailLevel {
+                                    padding-top: 1rem;
+                                    border-top: 2px solid #dce7f1;
+                                    .accordionTitle {
+                                        margin-bottom: .3rem;
+                                    }
+                                    .accordionParagraf {
+                                        margin-bottom: 1.4rem;
+                                    }
+                                    .accordion {
+                                        .accordion-item {
+                                            .accordion-header {
+                                                .accordion-button {
+                                                    width: 100%;
+                                                    text-align: start;
+                                                    border: none;
+                                                    padding: .5rem .8rem;
+                                                    border-radius: 4px;
+                                                    color: #fff;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    svg {
+                                                        transform: rotate(180deg);
+                                                        transition: transform .5s;
+                                                    }
+                                                }
+                                                .accordion-button.collapsed {
+                                                    svg {
+                                                        transform: rotate(0deg);
+                                                        transition: transform .5s;
+                                                    }
+                                                }
+                                            }
+                                            .accordion-collapse {
+                                                .accordion-body {
+                                                    background: #f8f9fa;
+                                                    padding: .5rem .8rem;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .formDetailService {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    #app {
+        #main {
+            .page-heading {
+                .section {
+                    display: flex;
+                    flex-direction: column;
+                    .detailService {
+                        width: 100%;
+                        margin-right: 0;
+                        .card-body {
+                            .informationService {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .formDetailService {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    #app {
+        #main {
+            .page-heading {
+                .section {
+                    display: flex;
+                    flex-direction: column;
+                    .detailService {
+                        width: 100%;
+                        margin-right: 0;
+                        .card-body {
+                            flex-direction: column;
+                            .imagesService {
+                                margin-right: 0;
+                                width: 100%;
+                                margin-bottom: 2rem;
+                                img {
+                                    max-width: none !important;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

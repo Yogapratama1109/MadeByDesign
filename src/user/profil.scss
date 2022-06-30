@@ -1,0 +1,55 @@
+#app {
+    #main {
+        .section {
+            .card {
+                .card-header {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .imgProfile {
+                        margin-bottom: 1.5rem;
+                        img {
+                            width: 100%;
+                            max-width: 224px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .btnChange {
+                        color: #fff;
+                        padding: .7rem 1.4rem;
+                        border-radius: 28px;
+                    }
+                }
+            }
+            .changePassword {
+                .card-header {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width :576px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-header {
+                        .imgProfile {
+                            margin-bottom: 1.5rem;
+                            img {
+                                max-width: 164px;
+                            }
+                        }
+                        .btnChange {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

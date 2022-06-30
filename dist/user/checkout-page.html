@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Service - Made By Design</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../assets/vendors/simple-datatables/style.css">
+
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/user/checkout-page.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item  active">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Checkout</h3>
+                            <p class="text-subtitle text-muted">Checkout Your Service Package</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="section">
+                    <div class="card orderDetail">
+                        <div class="card-header">
+                            <div class="icon">
+                                <i class="bi bi-credit-card-2-front-fill"></i>
+                            </div>
+                            <h4 class="transactionID">MBD #0112341</h4>
+
+                            <div class="informationTransaction">
+                                <div class="status">
+                                    <p>Status : <span class="succses label">Paid</span></p>
+                                    <!-- Kalau Status Cancle atau not paid pakai class .notPaid -->
+                                </div>
+                                <div class="date">
+                                    <p>Date : <span class="tanggal">10</span> <span class="bulan">Oktober</span> <span class="tahun">2021</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="lines borderBottom">
+                                <div class="detailService">
+                                    <div class="imagesService">
+                                        <img src="../assets/images/samples/motorcycle.jpg" alt="">
+                                    </div>
+                                    <div class="infoService">
+                                        <h4 class="nameService">UI UX Design</h4>
+                                        <p class="descService">Web Design</p>
+                                    </div>
+                                </div>
+                                <p class="totalPrice">Rp <span class="price">150.000</span></p>
+                            </div>
+                            <div class="lines note borderBottom">
+                                <h6>Note Detail</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim reprehenderit impedit mollitia expedita ipsam? Fugiat ratione laborum iste nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi ullam minus laudantium dicta, id a optio asperiores soluta reiciendis nulla delectus dolorem, dolor, perspiciatis aspernatur excepturi. Illum nostrum id quia sequi fugit a debitis eum, dolores culpa qui dignissimos omnis corrupti tenetur sapiente autem laborum eligendi obcaecati magnam corporis animi, suscipit nihil veniam? Tempora, delectus corporis? Necessitatibus temporibus facere quisquam tenetur, fugit et molestiae, nulla corporis facilis, ipsa natus error omnis ratione quam dolorum rerum ipsam voluptatibus repellat doloremque porro? Quae laudantium ducimus fugit autem saepe! Dignissimos placeat fugit, magnam vitae at excepturi enim ea ut. Repudiandae, accusantium aut.</p>
+                            </div>
+                            <div class="lines deadlineRequest">
+                                <h6>Deadline</h6>
+                                <input class="form-control" type="date" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card profileDetail">
+                        <div class="card-header">
+                            <div class="icon">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <h4>Profile Order</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <p class="label">Nama</p>
+                                <p class="value">M Alfito Rahman</p>
+                            </div>
+                            <div class="mb-2">
+                                <p class="label">Nomor HP</p>
+                                <p class="value">+6281290053372</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="card pembayaran">
+                        <div class="card-header">
+                            <div class="icon">
+                                <i class="bi bi-credit-card-2-front-fill"></i>
+                            </div>
+                            <h4 class="transactionID">Choose Payment</h4>
+                        </div>
+                        <div class="card-body">
+                           <form action="">
+                                <div class="mb-3">
+                                    <label for="metodePembayaran" class="form-label">Select a Payment</label>
+                                    <select class="form-select" id="metodePembayaran">
+                                        <option>IT</option>
+                                        <option>Blade Runner</option>
+                                        <option>Thor Ragnarok</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="buktiPembayaran" class="form-label">Proof of payment</label>
+                                    <input class="form-control" type="file" id="buktiPembayaran" multiple="">
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <div class="btn btn-primary">Pay Now</div>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script>
+        // Simple Datatable
+        let serviceTable = document.querySelector('#serviceTable');
+        let dataTable = new simpleDatatables.DataTable(serviceTable);
+    </script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

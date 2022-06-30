@@ -1,0 +1,144 @@
+#app {
+    #main {
+        .section {
+            .card {
+                .card-body {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .cards {
+                        width: 100%;
+                        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+                        border-radius: 24px;
+                        .imagesService {
+                            img {
+                                width: 100%;
+                                border-radius: 24px 24px 0 0;
+                                object-fit: cover;
+                                max-height: 320px;
+                            }
+                        }
+                        .detailService {
+                            text-align: center;
+                            padding: 2rem 1rem;
+                            .nameService {
+                                color: #25396f !important;
+                                font-weight: 800;
+                            }
+                            .kategori {
+                                color: #607080;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 0px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            width: 100%;
+                            &:not(:last-child) {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 576px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            margin: 2rem 1rem;
+                            width: 43%;
+                            &:not(:last-child) {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            margin: 2rem 1rem;
+                            width: 29.6%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            margin: 1rem .5rem;
+                            width: 31.3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1400px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            width: 23.3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 1900px) {
+    #app {
+        #main {
+            .section {
+                .card {
+                    .card-body {
+                        .cards {
+                            width: 18.9%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

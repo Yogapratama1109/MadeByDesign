@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Service - Made By Design</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../assets/vendors/simple-datatables/style.css">
+
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/user/revisied.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item">
+                            <a href="./dashboard.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="./pemesanan.html" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
+                                <span>Booking List</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-title">Sub Menu</li>
+
+                        <li class="sidebar-item active">
+                            <a href="./dashboard.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Revisied</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title mb-4 mb-lg-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Revisied</h3>
+                            <p class="text-subtitle text-muted">Revisied Your Design To Your Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="section">
+                    <div class="card revisiTable">
+                        <div class="card-header">
+                            <h4 class="card-title">Revisied Your Design Service</h4>
+                            <div class="addRevisied d-flex justify-content-end">
+                                <p>Add Revisied : <button class="btn btn-primary">Add Revisi</button></p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%">SERVICE</th>
+                                            <th style="width: 60%">REVISIED</th>
+                                            <th style="width: 10%">ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-bold-500">UI UX Designer</td>
+                                            <td>tambahkan Warna yang lebih unik dan cerah Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam amet illum suscipit molestias, labore quidem sit sunt hic praesentium ratione alias iste facere qui laborum porro molestiae totam. Rerum officiis optio qui eaque corporis eveniet, rem debitis reprehenderit inventore nemo, ipsum tempora! Alias voluptatibus magnam maxime totam qui eligendi sapiente, perspiciatis voluptatum eum rem cum omnis rerum quo saepe ab id itaque iusto accusantium minus possimus officiis ut. Iusto cum ut rem maiores quis, dolores quam vero eum suscipit, eaque sed obcaecati ea in, nisi quo iste accusamus non ab! Distinctio ipsam unde ad illum eos possimus saepe ex!</td>
+                                            <td class="btnAction">
+                                                <button class="btn btn-success">Selesai</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card detailServiceOrdered">
+                        <div class="card-header">
+                            <h4 class="card-title">Detail Service Package</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="cards">
+                                <div class="imgService">
+                                    <img src="../assets/images/samples/banana.jpg" alt="">
+                                </div>
+                                <div class="detailServiceInformation">
+                                    <div class="detailService">
+                                        <h5 class="nameService">UI UX Designer</h5>
+                                        <p class="kategori">Web Design</p>
+                                    </div>
+                                    <div class="prices">
+                                        Total Payment
+                                        <p>Rp <span class="price">140.000</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendors/simple-datatables/simple-datatables.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

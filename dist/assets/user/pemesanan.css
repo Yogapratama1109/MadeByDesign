@@ -1,0 +1,139 @@
+#app #main .section .card {
+  margin-bottom: 1rem;
+}
+
+#app #main .section .card .card-body .informationTransaksi {
+  margin-bottom: 1.7rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  color: #607080;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info .date {
+  margin-right: .7rem;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info .label {
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 700;
+  margin-right: .7rem;
+  font-size: 12px;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info .succses {
+  background: #d6ffde;
+  color: #03ac0e;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info .notPaid {
+  background-color: #ffeaef;
+  color: #ef144a;
+}
+
+#app #main .section .card .card-body .informationTransaksi .info .transactionID {
+  margin: 0;
+}
+
+#app #main .section .card .card-body .informationTransaksi .viewDetailTransaction {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#app #main .section .card .card-body .detailServiceInformation {
+  display: flex;
+  justify-content: space-between;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailService {
+  display: flex;
+  align-items: flex-start;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailService .imagesService {
+  margin-right: .7rem;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailService .imagesService img {
+  width: 100%;
+  max-width: 94px;
+  max-height: 94px;
+  border-radius: 8px;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailService .infoService .nameService {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailService .infoService .descService {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailPriceService {
+  padding: 0 1.5rem;
+  border-left: 1px solid #E5E7E9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#app #main .section .card .card-body .detailServiceInformation .detailPriceService p {
+  margin: 0;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  #app #main .section .card .card-body .informationTransaksi .info {
+    font-size: 12px;
+  }
+  #app #main .section .card .card-body .informationTransaksi .info .label {
+    font-size: 12px;
+  }
+  #app #main .section .card .card-body .informationTransaksi .viewDetailTransaction {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  #app #main .section .card .card-body .informationTransaksi {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #app #main .section .card .card-body .informationTransaksi .info {
+    margin-bottom: 1rem;
+    font-size: 10px;
+  }
+  #app #main .section .card .card-body .informationTransaksi .info .date {
+    margin-right: .3rem;
+  }
+  #app #main .section .card .card-body .informationTransaksi .info .label {
+    margin-right: .3rem;
+    font-size: 10px;
+  }
+  #app #main .section .card .card-body .informationTransaksi .viewDetailTransaction {
+    width: 100%;
+    text-align: end !important;
+  }
+  #app #main .section .card .card-body .detailServiceInformation .detailService .infoService .nameService {
+    font-size: 14px;
+  }
+  #app #main .section .card .card-body .detailServiceInformation .detailService .infoService .descService {
+    font-size: 12px;
+  }
+  #app #main .section .card .card-body .detailServiceInformation .detailPriceService {
+    font-size: 10px;
+    padding: 0 0 0 .7rem;
+  }
+}

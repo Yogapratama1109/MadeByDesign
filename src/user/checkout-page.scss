@@ -1,0 +1,215 @@
+#app {
+    #main {
+        .page-heading {
+            .section {
+                display: flex;
+                .card {
+                    .card-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .icon {
+                            margin-bottom: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            i {
+                                background: #435ebe;
+                                border-radius: 50%;
+                                padding: 2.2rem;
+                                color: #fff;
+                                font-size: 28px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                        .transactionID {
+                            margin-bottom: 1.2rem;
+                        }
+                        .informationTransaction {
+                            display: flex;
+                            align-items: flex-end;
+                            text-align: center;
+                            .status {
+                                font-size: .9rem;
+                                font-weight: 700;
+                                margin-right: .5rem;
+                                p {
+                                    margin-bottom: 0;
+                                }
+                                .label {
+                                    border-radius: 4px;
+                                    padding: 2px 8px;
+                                    font-weight: 700;
+                                }
+                                .succses {
+                                    background: rgb(214, 255, 222);
+                                    color: rgb(3, 172, 14);
+                                }
+                                .notPaid {
+                                    background-color: rgb(255, 234, 239);
+                                    color: rgb(239, 20, 74);
+                                }
+                            }
+                            .date {
+                                font-size: .9rem;
+                                font-weight: 700;
+                                p {
+                                    margin-bottom: 0;
+                                }
+                                span {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    .card-body {
+                        .lines {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1.5rem 0;
+
+                            .detailService {
+                                display: flex;
+                                align-items: flex-start;
+                                .imagesService {
+                                    margin-right: .7rem;
+                                    img {
+                                        width: 100%;
+                                        max-width: 94px;
+                                        max-height: 94px;
+                                        object-fit: cover;
+                                        object-position: center;
+                                        border-radius: 8px;
+                                    }
+                                }
+                                .infoService {
+                                    .nameService {
+                                        margin-bottom: 0rem;
+                                    }
+                                    .descService {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            .totalPrice {
+                                font-weight: 700;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .note {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            p {
+                                margin-bottom: 0;
+                                font-size: 14px;
+                            }
+                        }
+                        .deadlineRequest {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            input {
+                                width: min-content;
+                            }
+                        }
+                        .mb-2 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .label {
+                                font-weight: 700;
+                            }
+                        }
+                        .borderBottom {
+                            border-bottom: 1px solid #cdced0;
+                        }
+                    }
+                }
+                .orderDetail {
+                    width: 70%;
+                    margin-right: 2.2rem;
+                }
+                .profileDetail {
+                    width: 30%;
+                    height: max-content;
+                    .card-body {
+                        padding-top: 1rem;
+                        border-top: 1px solid #cdced0;
+                    }
+                }
+                .pembayaran {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 375px) {
+    .informationTransaction {
+        flex-direction: column;
+        .status {
+            width: 100%;
+            font-size: .8rem !important;
+            p {
+                margin-bottom: .3rem;
+            }
+        }
+        .date {
+            width: 100%;
+            font-size: .8rem !important;
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    #app {
+        #main {
+            .section {
+                flex-direction: column-reverse;
+                .card {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 414px) {
+    #app {
+        #main {
+            .section {
+                .orderDetail {
+                    .card-body {
+                        .lines {
+                            align-items: flex-end !important;
+                            .detailService {
+                                flex-direction: column;
+                                .imagesService {
+                                    margin-bottom: 1rem;
+                                }
+                                .infoService {
+                                    .nameService {
+                                        font-size: 18px;
+                                    }
+                                    .descService {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .totalPrice {
+                                font-size: 14px;
+                            }
+                        }
+                        .note {
+                            align-items: flex-start !important;
+                        }
+                        .deadlineRequest {
+                            align-items: flex-start !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
